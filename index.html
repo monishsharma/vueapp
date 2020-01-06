@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=description content="Free Web tutorials"><meta name=keywords content=HTML,CSS,XML,JavaScript><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.0.6/css/all.css><title>markk</title><link href=/css/app.032c640d.css rel=preload as=style><link href=/js/app.ea4380bf.js rel=preload as=script><link href=/js/chunk-vendors.aaf60ca1.js rel=preload as=script><link href=/css/app.032c640d.css rel=stylesheet></head><body><noscript><strong>We're sorry but markk doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script>var map;
+    function initMap() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(position => {
+          var uluru = { lat: position.coords.latitude, lng: position.coords.longitude };
+          var map = new google.maps.Map(
+            document.getElementById('map'), { zoom: 4, center: uluru });
+          var marker = new google.maps.Marker({ position: uluru, map: map });
+        })
+      }
+
+    }</script><script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO1hqnhKB7xokxBCpMylPHNjvrZw29QpQ&callback=initMap"></script><script src=/js/chunk-vendors.aaf60ca1.js></script><script src=/js/app.ea4380bf.js></script></body></html>
